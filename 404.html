@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Cloud File</title>
+    <script type="text/javascript">
+      // EXAMPLE: path = /image/2I1M2J0N3i44 (CloudApp) or path = /v/0wHYDR0LbrJ8NNmz1Q98 (JumpShare)
+      var path = window.location.pathname || "";
+      if (path.substring(0, 2) == "/v/") {
+        // path is Jumpshare!
+        window.location.replace("https://jumpshare.com" + path);
+      } else {
+        // path is CloudApp!
+        window.location.replace("https://cl.ly" + path);
+      }   
+    </script>
+  </head>
+  <body>
+    <h1>Redirecting...</h1>
+    <noscript>You must have Javascript enabled to access this page. You may need to upgrade your browser to a modern web browser such as Internet Explorer 6.</noscript>
+  </body>
+</html>
